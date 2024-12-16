@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    margin: 0 2%;
+    max-width: 1200px;
+    height: 700px;
+    display: flex;
+    box-shadow: 2px 2px 8px;
+    border-radius: 20px;
+}
+
+.box-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: blue;
+    border-radius: 20px 0 0 20px;
+}
+
+.box-left h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.box-left p {
+    text-align: center;
+    padding: 0 4%;
+    color: #dcdcdc;
+}
+
+.btn {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.sign-in {
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+.sign-in:hover {
+    background-color: black;
+}
+
+.box-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-right h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.icons-login {
+    margin: 10px 0 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.fa-brands {
+    font-size: 20px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #8c8c8c;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fa-facebook-f {
+    color: #1d1a3f;
+}
+
+.fa-facebook-f:hover,
+.fa-google-plus-g:hover {
+    background-color: #ededed;
+}
+
+.box-right p {
+    text-align: center;
+    color: #505050;
+}
+
+.box-right input {
+    margin-top: 15px;
+    width: 80%;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+}
+
+.box-right input::placeholder {
+    font-size: 18px;
+    color: #848383;
+}
+
+.sign-up {
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+}
+
+.sign-up:hover {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.box-right a {
+    display: none;
+}
+
+@media (max-width: 880px) {
+    body {
+        display: block;
+        position: relative;
+    }
+
+    .container {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-52%, -50%);
+    }
+
+    .box-left {
+        display: none;
+    }
+
+    .box-right {
+        width: 100%;
+    }
+
+    .box-right a {
+        display: block;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 385px) {
+    .container {
+        width: 90%;
+    }
+
+    .box-right h1 {
+        font-size: 33px;
+    }
+}
